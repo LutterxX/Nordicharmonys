@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Nordic Harmony</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <style>
     body {
       margin: 0;
@@ -14,50 +15,80 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      height: 100vh;
+      min-height: 100vh;
       text-align: center;
     }
-    .card {
-      background: rgba(255, 255, 255, 0.05);
-      border-radius: 16px;
-      padding: 50px 30px;
-      max-width: 400px;
+    .container {
       width: 90%;
-      box-shadow: 0 8px 30px rgba(0,0,0,0.3);
+      max-width: 600px;
+      background: rgba(255, 255, 255, 0.05);
+      border-radius: 20px;
+      padding: 60px 30px;
+      box-shadow: 0 10px 40px rgba(0,0,0,0.3);
     }
-    h1 {
-      margin: 0;
+    img.logo {
+      max-width: 150px;
+      margin-bottom: 20px;
+    }
+    h2.slogan {
+      margin: 0 0 20px;
+      font-size: 1.3em;
+      font-weight: 400;
+      color: #E0E0E0;
+    }
+    h1.title {
+      margin: 0 0 40px;
       font-size: 2.5em;
       letter-spacing: 1px;
       color: #FFFFFF;
     }
-    h2 {
-      margin: 10px 0 30px;
-      font-size: 1.2em;
-      font-weight: 400;
-      color: #E0E0E0;
-    }
     a.button {
       display: inline-block;
-      padding: 14px 28px;
-      font-size: 1em;
+      padding: 16px 32px;
+      font-size: 1.1em;
       color: #0A3D3C;
       background: #FFFFFF;
-      border-radius: 8px;
+      border-radius: 10px;
       text-decoration: none;
-      transition: all 0.3s ease;
       font-weight: bold;
+      transition: transform 0.2s, background 0.3s;
     }
     a.button:hover {
       background: #E0E0E0;
+      transform: scale(1.05);
+    }
+    .social-icons {
+      margin-top: 30px;
+    }
+    .social-icons a {
+      color: #FFFFFF;
+      margin: 0 10px;
+      font-size: 1.5em;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #E0E0E0;
     }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h2>Royalty-Free Sounds & Music</h2>
-    <h1>Nordic Harmony</h1>
+  <div class="container">
+    <!-- Logo placeholder -->
+    <img src="logo.png" alt="Nordic Harmony Logo" class="logo">
+    
+    <!-- Slogan and title -->
+    <h2 class="slogan">Royalty-Free Sounds & Music</h2>
+    <h1 class="title">Nordic Harmony</h1>
+    
+    <!-- Contact button -->
     <a href="mailto:yourgmail@gmail.com" class="button">Contact Me</a>
+    
+    <!-- Social icons (optional) -->
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-soundcloud"></i></a>
+      <a href="#"><i class="fab fa-youtube"></i></a>
+      <a href="#"><i class="fab fa-spotify"></i></a>
+    </div>
   </div>
 </body>
 </html>
